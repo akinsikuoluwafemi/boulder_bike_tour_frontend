@@ -9,9 +9,7 @@ import { RiderProvider } from './components/context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RiderProvider>
-      <Navigation />
-    </RiderProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

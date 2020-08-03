@@ -3,15 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Navigation from './components/Navigation';
-import { RiderProvider } from './components/context';
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <RiderProvider>
-      <Navigation />
-    </RiderProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
