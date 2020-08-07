@@ -43,8 +43,6 @@ const ImageList = () =>{
                 setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
                 setPage(page + 1)
-                console.log(page)
-                console.log(perPage)
                 console.log(lastPicture) 
                 console.log(pictures)
                 

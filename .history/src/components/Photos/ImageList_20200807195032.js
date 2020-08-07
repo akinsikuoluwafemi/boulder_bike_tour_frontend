@@ -18,7 +18,7 @@ const ImageList = () =>{
 
     useEffect(() =>{
         loadPictures()
-    }, [])
+    }, [pi])
 
 
     const loadPictures = () =>{
@@ -37,13 +37,12 @@ const ImageList = () =>{
                             
 
                 })
-                setPictures([...pictures, ...pics ])
+                setPictures(pics.concat(pics))
                 setTotalPages(pages)
                 setLoading(false)
                 setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
                 setPage(page + 1)
-                console.log(page)
                 console.log(perPage)
                 console.log(lastPicture) 
                 console.log(pictures)

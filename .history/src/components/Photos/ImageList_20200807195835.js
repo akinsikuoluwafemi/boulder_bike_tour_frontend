@@ -44,7 +44,6 @@ const ImageList = () =>{
                 // setPerPage(perPage + 5)
                 setPage(page + 1)
                 console.log(page)
-                console.log(perPage)
                 console.log(lastPicture) 
                 console.log(pictures)
                 

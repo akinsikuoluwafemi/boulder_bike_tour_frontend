@@ -10,7 +10,7 @@ const ImageList = () =>{
 
     const [pictures, setPictures] = useState([])
     const [query, setQuery] = useState('bike')
-    const [perPage, setPerPage] = useState(3)
+    const [perPage, setPerPage] = useState(5)
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
@@ -37,13 +37,12 @@ const ImageList = () =>{
                             
 
                 })
-                setPictures([...pictures, ...pics ])
+                setPictures(pics)
                 setTotalPages(pages)
                 setLoading(false)
                 setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
                 setPage(page + 1)
-                console.log(page)
                 console.log(perPage)
                 console.log(lastPicture) 
                 console.log(pictures)
