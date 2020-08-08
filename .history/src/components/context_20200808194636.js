@@ -18,8 +18,8 @@ class RiderProvider extends Component
         fetch('https://bike-boulder-tour.herokuapp.com/api/v1/riders')
             .then(response => response.json())
             .then(riders =>{
-                this.setState({ riders: riders, loading: false })
-
+                this.setState({ riders })
+                
             })
             .catch(error => console.log(error))
 

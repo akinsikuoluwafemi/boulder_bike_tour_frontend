@@ -5,7 +5,6 @@ import HeaderTime from '../HeaderTime/HeaderTime'
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps'
 import { RiderContext } from '../context'
 import mapStyles from './mapStyles'
-import Spinner from '../Spinner/Spinner';
 
 
 class Location extends Component {
@@ -87,16 +86,16 @@ class Map extends Component {
 
 
    render(){
-       const { riders, loading } = this.context
-       
+       const { riders } = this.context
         console.log(riders)
         const {selectedRider} = this.state
        return (
-        
            <GoogleMap
                defaultZoom={10}
-               defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
-                defaultOptions={{styles: mapStyles}}>
+                defaultCenter={{ lat: 40.014984, lng: -105.270546 }}
+                defaultOptions={{styles: mapStyles}}
+                
+           >
 
             
                {riders.map(rider => (
@@ -116,8 +115,8 @@ class Map extends Component {
                {selectedRider && (
                    <InfoWindow
                        position={{
-                           lat: parseFloat(selectedRider.lat),
-                           lng: parseFloat(selectedRider.lng)
+                           lat: selectedRider.lat,
+                           lng: selectedRider.lng)
                        }}     
                     onCloseClick={() => {
                         this.setState({

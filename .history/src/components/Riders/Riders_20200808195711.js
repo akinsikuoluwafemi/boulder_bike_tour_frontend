@@ -67,13 +67,13 @@ const Riders = () =>
 
 
             <div className="container my-5">
-                
-                {loading ? <Spinner /> : null}
+                <Spinner />
+                {/* {loading ? <Spinner /> : renderedRider} */}
 
                 
                 <div className="rider-card-container">
 
-                    {renderedRider}
+                    {/* {loading ? <Spinner /> : renderedRider} */}
                     
 
                 </div>

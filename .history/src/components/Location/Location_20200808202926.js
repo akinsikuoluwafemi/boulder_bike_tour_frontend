@@ -92,7 +92,8 @@ class Map extends Component {
         console.log(riders)
         const {selectedRider} = this.state
        return (
-        
+            {loading ? <Spinner/> : 
+            }
            <GoogleMap
                defaultZoom={10}
                defaultCenter={{ lat: 40.016869, lng: -105.279617 }}

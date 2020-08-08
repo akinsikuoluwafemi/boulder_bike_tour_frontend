@@ -92,8 +92,8 @@ class Map extends Component {
         console.log(riders)
         const {selectedRider} = this.state
        return (
-        
-           <GoogleMap
+            
+         {loading ? }  <GoogleMap
                defaultZoom={10}
                defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
                 defaultOptions={{styles: mapStyles}}>

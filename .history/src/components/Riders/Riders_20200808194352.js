@@ -67,14 +67,9 @@ const Riders = () =>
 
 
             <div className="container my-5">
-                
-                {loading ? <Spinner /> : null}
-
-                
                 <div className="rider-card-container">
 
                     {renderedRider}
-                    
 
                 </div>
             </div>

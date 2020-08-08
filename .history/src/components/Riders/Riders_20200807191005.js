@@ -3,12 +3,12 @@ import './Riders.scss'
 import HeaderTime from '../HeaderTime/HeaderTime'
 import { Link } from 'react-router-dom'
 import { RiderContext } from '../context'
-import Spinner from '../Spinner/Spinner';
+
 
 const Riders = () =>
 {
 
-    const { riders, loading } = useContext(RiderContext)
+    const { riders } = useContext(RiderContext)
     console.log(riders)
 
     const renderedRider = riders.map(rider => (
@@ -67,14 +67,9 @@ const Riders = () =>
 
 
             <div className="container my-5">
-                
-                {loading ? <Spinner /> : null}
-
-                
                 <div className="rider-card-container">
 
                     {renderedRider}
-                    
 
                 </div>
             </div>

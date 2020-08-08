@@ -67,7 +67,7 @@ const Riders = () =>
 
 
             <div className="container my-5">
-                
+                <Spinner />
                 {loading ? <Spinner /> : null}
 
                 

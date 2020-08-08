@@ -4,10 +4,10 @@ import './Spinner.scss'
 
 const Spinner = () => {
     return (
-        <div className="spinner-container">
-            <div class="loader"></div>
-
+        <div>
+            
         </div>
+        <div class="loader"></div>
     )
 }
 

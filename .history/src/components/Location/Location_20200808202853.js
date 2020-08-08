@@ -92,51 +92,14 @@ class Map extends Component {
         console.log(riders)
         const {selectedRider} = this.state
        return (
-        
-           <GoogleMap
-               defaultZoom={10}
-               defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
-                defaultOptions={{styles: mapStyles}}>
-
+           { loading?<Spinner/> :
+   
             
-               {riders.map(rider => (
-                   <Marker
-                       key={rider.id}
-                       position={{
-                           lat: parseFloat(rider.lat),
-                           lng: parseFloat(rider.lng) 
-                       }}
-                        onClick={() => {
-                            this.setState({selectedRider:rider})
-                        }}
-                      
-                   />
-            ))}
-
-               {selectedRider && (
-                   <InfoWindow
-                       position={{
-                           lat: parseFloat(selectedRider.lat),
-                           lng: parseFloat(selectedRider.lng)
-                       }}     
-                    onCloseClick={() => {
-                        this.setState({
-                            selectedRider: null
-
-                        })
-                    }}
-                   >
-                       
-                       <div>
-                           <h3>Name: {selectedRider.first_name + ' - ' + selectedRider.last_name}</h3>
-                           <h4 style={{color: "#777"}}>City : {selectedRider.city}</h4>
-                           <h4 style={{ color: "#777" }}>State : {selectedRider.state}</h4>
-                       </div>
-                       
-                    </InfoWindow>
-            )}
-
-           </GoogleMap>
+   
+   
+   
+   }
+         
        )
    }
 }
