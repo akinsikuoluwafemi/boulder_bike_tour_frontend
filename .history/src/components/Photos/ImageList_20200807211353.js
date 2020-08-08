@@ -21,9 +21,8 @@ const ImageList = () =>{
 
     useEffect(() =>{
         loadPictures()
-        window.addEventListener('scroll', (e) => {
-            console.log(window.pageYOffset)
-        })
+        window.addEventListener('click', )
+      
     }, [])
     
 
@@ -37,10 +36,7 @@ const ImageList = () =>{
                 let { pages, photo } = data.photos
                 let pics = photo.map((pic,index) =>{
                     let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
-                    return (
-                        <ImageCard key={srcPath} alt="" src={srcPath} />
-
-                    )
+                        return <ImageCard key={srcPath} alt="" src={srcPath} />
 
                 })
                 setPictures([...pictures, ...pics])

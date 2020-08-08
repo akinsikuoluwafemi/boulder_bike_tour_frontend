@@ -24,7 +24,7 @@ const ImageList = () =>{
         window.addEventListener('scroll', (e) => {
             console.log(window.pageYOffset)
         })
-    }, [])
+    }, [lastPicture])
     
 
     const loadPictures = () =>{

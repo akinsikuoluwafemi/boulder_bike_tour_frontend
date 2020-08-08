@@ -38,9 +38,11 @@ const ImageList = () =>{
                 let pics = photo.map((pic,index) =>{
                     let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
                     return (
+                        
+                    )<div
                         <ImageCard key={srcPath} alt="" src={srcPath} />
 
-                    )
+                        </div >
 
                 })
                 setPictures([...pictures, ...pics])

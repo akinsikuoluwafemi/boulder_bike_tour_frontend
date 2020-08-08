@@ -15,17 +15,13 @@ const ImageList = () =>{
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
     const [lastPicture, setLastPicture] = useState(null)
-    const [scrolling, setScrolling] = useState(false)
-
     let scrollListener;
 
     useEffect(() =>{
         loadPictures()
-        window.addEventListener('scroll', (e) => {
-            console.log(window.pageYOffset)
-        })
+        scrollListener = window.addEventListener('scroll', e => handleScroll(e)) 
     }, [])
-    
+
 
     const loadPictures = () =>{
 
@@ -37,10 +33,7 @@ const ImageList = () =>{
                 let { pages, photo } = data.photos
                 let pics = photo.map((pic,index) =>{
                     let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
-                    return (
-                        <ImageCard key={srcPath} alt="" src={srcPath} />
-
-                    )
+                        return <ImageCard key={srcPath} alt="" src={srcPath} />
 
                 })
                 setPictures([...pictures, ...pics])
@@ -61,17 +54,7 @@ const ImageList = () =>{
     }
   
 
-    const handleScroll = (e) => {
-        // totalPages
-        // page
-        // scrolling
-        if (scrolling) return
-        if (totalPages <= page) return
 
-        // lastPicture
-        console.log(e)
-
-    }
 
 
 
@@ -119,7 +102,7 @@ const ImageList = () =>{
 
             {loading ? <Spinner /> : null}
 
-            {totalPages < page ? <div>There are no more pictures to load</div> :
+            {totalPages < 1 ? <div>There are no more pictures to load</div> :
 
                 <button onClick={loadPictures} className="btn btn-info">LoadMore</button>
 
