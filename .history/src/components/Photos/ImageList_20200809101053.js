@@ -87,6 +87,7 @@ const ImageList = () =>{
                     </button>
                     <div class="collapse navbar-collapse" id="navbar1">
                         <ul class="navbar-nav">
+                         
                             <li class="nav-item active">
                                 <Link to="/photos" class="nav-link" >Photos</Link>
                             </li>

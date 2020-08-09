@@ -9,12 +9,8 @@ import Spinner from '../Spinner/Spinner';
 
 
 class Location extends Component {
+    render(){
     
-    static contextType = RiderContext
-   
-    render() {
-        
-        const { loading } = this.context
 
         return (
             <div>
@@ -53,8 +49,6 @@ class Location extends Component {
                 
                 <div style={{width: '100vw', height: '100vh'}}>
 
-                    {loading ? <Spinner /> : 
-                    
 
                     <WrappedMap
                         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBniFhD5gyPyOrEm212cVIAYVythPk2JcE`}
@@ -65,8 +59,6 @@ class Location extends Component {
                         mapElement={<div style={{ height: "100%" }} />}
                         
                         />
-
-                    }
                     
                 </div>
 
@@ -93,59 +85,55 @@ class Map extends Component {
 
    render(){
        const { riders, loading } = this.context
-        console.log(riders)
-       const { selectedRider } = this.state
        
+        console.log(riders)
+        const {selectedRider} = this.state
        return (
-           
-           <div>
-             <GoogleMap
-                defaultZoom={10}
-                defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
-                    defaultOptions={{styles: mapStyles}}>
+            {loading ? <Spinner/> 
+           <GoogleMap
+               defaultZoom={10}
+               defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
+                defaultOptions={{styles: mapStyles}}>
 
-                
-                {riders.map(rider => (
-                    <Marker
-                        key={rider.id}
-                        position={{
-                            lat: parseFloat(rider.lat),
-                            lng: parseFloat(rider.lng) 
+            
+               {riders.map(rider => (
+                   <Marker
+                       key={rider.id}
+                       position={{
+                           lat: parseFloat(rider.lat),
+                           lng: parseFloat(rider.lng) 
+                       }}
+                        onClick={() => {
+                            this.setState({selectedRider:rider})
                         }}
-                            onClick={() => {
-                                this.setState({selectedRider:rider})
-                            }}
-                        
-                    />
-                ))}
+                      
+                   />
+            ))}
 
-                {selectedRider && (
-                    <InfoWindow
-                        position={{
-                            lat: parseFloat(selectedRider.lat),
-                            lng: parseFloat(selectedRider.lng)
-                        }}     
-                        onCloseClick={() => {
-                            this.setState({
-                                selectedRider: null
+               {selectedRider && (
+                   <InfoWindow
+                       position={{
+                           lat: parseFloat(selectedRider.lat),
+                           lng: parseFloat(selectedRider.lng)
+                       }}     
+                    onCloseClick={() => {
+                        this.setState({
+                            selectedRider: null
 
-                            })
-                        }}
-                    >
-                        
-                        <div>
-                            <h3>Name: {selectedRider.first_name + ' - ' + selectedRider.last_name}</h3>
-                            <h4 style={{color: "#777"}}>City : {selectedRider.city}</h4>
-                            <h4 style={{ color: "#777" }}>State : {selectedRider.state}</h4>
-                        </div>
-                        
-                        </InfoWindow>
-                )}
+                        })
+                    }}
+                   >
+                       
+                       <div>
+                           <h3>Name: {selectedRider.first_name + ' - ' + selectedRider.last_name}</h3>
+                           <h4 style={{color: "#777"}}>City : {selectedRider.city}</h4>
+                           <h4 style={{ color: "#777" }}>State : {selectedRider.state}</h4>
+                       </div>
+                       
+                    </InfoWindow>
+            )}
 
-                </GoogleMap>
-               
-           </div>
-               
+           </GoogleMap>
        )
    }
 }

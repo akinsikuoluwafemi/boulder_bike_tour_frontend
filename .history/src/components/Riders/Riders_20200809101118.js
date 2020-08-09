@@ -43,6 +43,7 @@ const Riders = () =>
                     </button>
                     <div className="collapse navbar-collapse" id="navbar1">
                         <ul className="navbar-nav">
+                          
                             <li className="nav-item">
                                 <Link to="/photos" className="nav-link" >Photos</Link>
                             </li>

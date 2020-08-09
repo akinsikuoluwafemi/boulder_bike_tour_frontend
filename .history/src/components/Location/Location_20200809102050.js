@@ -9,12 +9,8 @@ import Spinner from '../Spinner/Spinner';
 
 
 class Location extends Component {
+    render(){
     
-    static contextType = RiderContext
-   
-    render() {
-        
-        const { loading } = this.context
 
         return (
             <div>
@@ -53,8 +49,7 @@ class Location extends Component {
                 
                 <div style={{width: '100vw', height: '100vh'}}>
 
-                    {loading ? <Spinner /> : 
-                    
+                    <Spinner/>
 
                     <WrappedMap
                         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBniFhD5gyPyOrEm212cVIAYVythPk2JcE`}
@@ -65,8 +60,6 @@ class Location extends Component {
                         mapElement={<div style={{ height: "100%" }} />}
                         
                         />
-
-                    }
                     
                 </div>
 
@@ -99,7 +92,7 @@ class Map extends Component {
        return (
            
            <div>
-             <GoogleMap
+            {/* <GoogleMap
                 defaultZoom={10}
                 defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
                     defaultOptions={{styles: mapStyles}}>
@@ -142,7 +135,7 @@ class Map extends Component {
                         </InfoWindow>
                 )}
 
-                </GoogleMap>
+                </GoogleMap> */}
                
            </div>
                

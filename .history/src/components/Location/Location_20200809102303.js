@@ -9,12 +9,10 @@ import Spinner from '../Spinner/Spinner';
 
 
 class Location extends Component {
-    
-    static contextType = RiderContext
    
-    render() {
-        
-        const { loading } = this.context
+    render(){
+    static contextType = RiderContext
+    
 
         return (
             <div>
@@ -99,7 +97,7 @@ class Map extends Component {
        return (
            
            <div>
-             <GoogleMap
+            {/* <GoogleMap
                 defaultZoom={10}
                 defaultCenter={{ lat: 40.016869, lng: -105.279617 }}
                     defaultOptions={{styles: mapStyles}}>
@@ -142,7 +140,7 @@ class Map extends Component {
                         </InfoWindow>
                 )}
 
-                </GoogleMap>
+                </GoogleMap> */}
                
            </div>
                
