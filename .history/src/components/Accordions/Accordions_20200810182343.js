@@ -64,11 +64,11 @@ export default function Accordions() {
                 <p>MANAGEMENT TEAM</p>
                 <div class="accordion-item-content">
                     <ul>
-                        <li><a style={{ color: '#777' }} href="#">ALL BOULDER BIKE TOURS</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">THE ORGANISATION</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">OUR MOTTO</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">SPONSORS</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">CAREERS</a> </li>
+                        <li><a href=""></a> ALL BOULDER BIKE TOURS</li>
+                        <li><a href=""></a> THE ORGANISATION</li>
+                        <li><a href=""></a> OUR MOTTO</li>
+                        <li><a href=""></a> SPONSORS</li>
+                        <li><a href=""></a> CAREERS</li>
 
                     </ul>
                 </div>

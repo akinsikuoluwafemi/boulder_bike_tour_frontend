@@ -66,9 +66,9 @@ export default function Accordions() {
                     <ul>
                         <li><a style={{ color: '#777' }} href="#">ALL BOULDER BIKE TOURS</a> </li>
                         <li><a style={{ color: '#777' }} href="#">THE ORGANISATION</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">OUR MOTTO</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">SPONSORS</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">CAREERS</a> </li>
+                        <li><a href="#">OUR MOTTO</a> </li>
+                        <li><a href="#">SPONSORS</a> </li>
+                        <li><a href="#">CAREERS</a> </li>
 
                     </ul>
                 </div>

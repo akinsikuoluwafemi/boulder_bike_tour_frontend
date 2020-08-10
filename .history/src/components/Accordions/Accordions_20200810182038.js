@@ -50,10 +50,10 @@ export default function Accordions() {
                 <div class="accordion-item-content">
                     <ul>
                         <li><a style={{ color: '#777' }} href="#">BOULDER BIKE CLUBS</a></li>
-                        <li><a style={{ color: '#777' }} href="#"> WOMEN IN SPORTS</a></li>
-                        <li><a style={{ color: '#777' }} href="#">SPORTS FOR JUSTICE</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">YOUTH BIKING RACES</a> </li>
-                        <li><a style={{ color: '#777' }} href="#"> BOULDER BIKERS NGO</a></li>
+                        <li><a href="#"> WOMEN IN SPORTS</a></li>
+                        <li><a href="#">SPORTS FOR JUSTICE</a> </li>
+                        <li><a href="#">YOUTH BIKING RACES</a> </li>
+                        <li><a href="#"> BOULDER BIKERS NGO</a></li>
 
                     </ul>
                 </div>
@@ -64,11 +64,11 @@ export default function Accordions() {
                 <p>MANAGEMENT TEAM</p>
                 <div class="accordion-item-content">
                     <ul>
-                        <li><a style={{ color: '#777' }} href="#">ALL BOULDER BIKE TOURS</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">THE ORGANISATION</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">OUR MOTTO</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">SPONSORS</a> </li>
-                        <li><a style={{ color: '#777' }} href="#">CAREERS</a> </li>
+                        <li>ALL BOULDER BIKE TOURS</li>
+                        <li>THE ORGANISATION</li>
+                        <li>OUR MOTTO</li>
+                        <li>SPONSORS</li>
+                        <li>CAREERS</li>
 
                     </ul>
                 </div>

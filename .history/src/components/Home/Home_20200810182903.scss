@@ -124,10 +124,10 @@ button.slick-arrow {
 
 }
 
-.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus {
-    color: transparent!important;
-    outline: none!important;
-    background: #777!important;
+.slick-prev:hover,.slick-prev:focus,.slick-next:hover, .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: #777;
 
 }
 
