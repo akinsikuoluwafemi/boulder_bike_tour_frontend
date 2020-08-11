@@ -1,0 +1,21 @@
+.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contest-heading-text {
+    padding: 0 15rem;
+}
+
+@media(max-width: 1025px){
+    .contest-heading-text {
+        padding: 0 0rem;
+
+    }
+
+}
+
+.bg-contest {
+    background-image: url('../../images/')
+}

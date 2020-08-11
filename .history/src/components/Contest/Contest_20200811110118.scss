@@ -1,0 +1,11 @@
+.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contest-heading-text {
+    padding: 0 15rem;
+}
+
+@media(max-width: 625px)
