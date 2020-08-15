@@ -6,7 +6,8 @@ import Spinner from '../Spinner/Spinner'
 import ImageCard from './ImageCard'
 
 
-const ImageList = () =>{
+const ImageList = () =>
+{
 
     const [pictures, setPictures] = useState([])
     const [query] = useState('bike-race')
@@ -16,9 +17,12 @@ const ImageList = () =>{
     const [loading, setLoading] = useState(true);
 
 
+
+
     useEffect(() =>{
         loadPictures()
     }, [])
+
 
     const loadPictures = () =>{
 
