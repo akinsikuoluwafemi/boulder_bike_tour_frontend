@@ -15,6 +15,7 @@ const ImageList = () =>
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
+    const [lastPicture, setLastPicture] = useState(null)
 
 
 
@@ -22,7 +23,7 @@ const ImageList = () =>
     useEffect(() =>{
         loadPictures()
 
-    },[])
+    })
 
 
     const loadPictures = () =>
@@ -47,10 +48,13 @@ const ImageList = () =>
                 setPictures([...pictures, ...pics])
                 setLoading(false)
                 setTotalPages(pages)
-                
+                setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
-                setPage(prevPage => prevPage + 1)
-                
+                setPage(page + 1)
+                console.log(page)
+                console.log(perPage)
+                console.log(lastPicture)
+                console.log(pictures)
             }).catch(err =>
             {
                 console.log(err)
@@ -67,27 +71,27 @@ const ImageList = () =>
         <div className="py-4">
             <HeaderTime />
 
-            <nav className="navbar navbar-expand-sm sticky-top navbar-light bg-light">
-                <div className="container">
-                    <Link to="/" className="navbar-brand">Boulder Bike Tour</Link>
-                    <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
-                        <span className="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+                <div class="container">
+                    <Link to="/" class="navbar-brand">Boulder Bike Tour</Link>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbar1">
-                        <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <Link to="/photos" className="nav-link" >Photos</Link>
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <Link to="/photos" class="nav-link" >Photos</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/contest" className="nav-link" >Contest</Link>
+                            <li class="nav-item">
+                                <Link to="/contest" class="nav-link" >Contest</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/riders" className="nav-link" >Riders</Link>
+                            <li class="nav-item">
+                                <Link to="/riders" class="nav-link" >Riders</Link>
                             </li>
                         </ul>
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link to="/location" className="nav-link" href="#">Location</Link>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <Link to="/location" class="nav-link" href="#">Location</Link>
                             </li>
                         </ul>
                     </div>
@@ -123,7 +127,7 @@ const ImageList = () =>
                     {totalPages < page ? <div align="center">There are no more pictures to load</div> :
 
 
-                        <div onClick={loadPictures} className="button_cont mt-5" align="center"><span class="example_d" rel="nofollow noopener">Load More</span></div>
+                        <div onClick={loadPictures} className="button_cont mt-5" align="center"><a class="example_d" rel="nofollow noopener">Load More</a></div>
                     }
                 </div>
             </div>

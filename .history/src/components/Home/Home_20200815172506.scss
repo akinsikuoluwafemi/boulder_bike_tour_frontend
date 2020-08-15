@@ -20,6 +20,13 @@
 
 }
 
+@media(max-width: 320px){
+    .heading-text {
+    padding-left: 3rem;
+    
+
+}
+}
 
 .btn-hero {
     display: flex;
@@ -44,7 +51,13 @@
     width: 20rem!important;
 }
 
+@media(max-width: 320px){
+    .heading-text {
+        margin: 0;
 
+    }
+
+}
 
 // slick slider start
 
@@ -319,28 +332,4 @@ background-color: #666666;
 
 .bg-purple {
     background: #663399;
-}
-
-
-
-// @media(max-width: 320px){
-//     .header-hero {
-//         justify-content: center;
-//         align-items: center;
-        
-//     }
-// }
-
-@media(max-width: 425px){
-     .header-hero {
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .bg-purple {
-        background: transparent!important;
-    }
-
-
 }

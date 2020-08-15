@@ -53,7 +53,7 @@ const Home = () =>{
 
 
             <div className="header-hero">
-                <div className="heading-text">
+                <div align="center" className="heading-text">
                     <div className=" card-width shadow bg-purple text-white px-3 py-2 ">
                         <h4 className="">Connect with the world best bikers at the Boulder Bike Tour</h4>
 

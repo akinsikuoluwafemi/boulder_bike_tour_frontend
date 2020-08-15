@@ -331,16 +331,10 @@ background-color: #666666;
 //     }
 // }
 
-@media(max-width: 425px){
+@media(max-width: 767px){
      .header-hero {
         justify-content: center;
         align-items: center;
         
     }
-
-    .bg-purple {
-        background: transparent!important;
-    }
-
-
 }

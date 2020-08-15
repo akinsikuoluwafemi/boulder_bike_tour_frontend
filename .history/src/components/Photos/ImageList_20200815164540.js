@@ -15,6 +15,7 @@ const ImageList = () =>
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
+    const [lastPicture, setLastPicture] = useState(null)
 
 
 
@@ -47,7 +48,7 @@ const ImageList = () =>
                 setPictures([...pictures, ...pics])
                 setLoading(false)
                 setTotalPages(pages)
-                
+                setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
                 setPage(prevPage => prevPage + 1)
                 

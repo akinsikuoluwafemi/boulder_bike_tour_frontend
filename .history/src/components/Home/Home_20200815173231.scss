@@ -323,24 +323,19 @@ background-color: #666666;
 
 
 
-// @media(max-width: 320px){
-//     .header-hero {
-//         justify-content: center;
-//         align-items: center;
-        
-//     }
-// }
-
-@media(max-width: 425px){
-     .header-hero {
+@media(max-width: 320px){
+    .header-hero {
         justify-content: center;
         align-items: center;
         
     }
+}
 
-    .bg-purple {
-        background: transparent!important;
+@media(max-width: 767px){
+    .show-big {
+        display: none;
     }
-
-
+    .show-small {
+        display: block;
+    }
 }

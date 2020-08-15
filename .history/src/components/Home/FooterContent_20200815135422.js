@@ -27,9 +27,9 @@ export default function FooterContent(){
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Media Resources</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Latest News</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Key event calender</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">publications</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Documents</a></li>
-                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#77">Faq</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">publications</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Documents</a></li>
+                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#">Faq</a></li>
 
                             </ul>
                         </div>
@@ -37,31 +37,31 @@ export default function FooterContent(){
                         <div className="footer-content">
                             <h6 className="footer-heading-text py-3">Behind the games</h6>
                             <ul className="footer-list">
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Mascots</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">acient games</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Past footage</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Mascots</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">acient games</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Past footage</a></li>
                             </ul>
                         </div>
 
                         <div className="footer-content">
                             <h6 className="footer-heading-text py-3">PROGRAMMES</h6>
                             <ul className="footer-list">
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Boulder Bike Clubs</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">women in sports</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">sports for justice</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Youth biking races</a></li>
-                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#77">Boulder Bikers NGO</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Boulder Bike Clubs</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">women in sports</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">sports for justice</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Youth biking races</a></li>
+                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#">Boulder Bikers NGO</a></li>
                             </ul>
                         </div>
 
                         <div className="footer-content">
                             <h6 className="footer-heading-text py-3">Management Team</h6>
                             <ul className="footer-list">
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">All Boulder Bike tours</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">The Organisation</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Our Motto</a></li>
-                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Sponsors</a></li>
-                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#77">Careers</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">All Boulder Bike tours</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">The Organisation</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Our Motto</a></li>
+                                <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#">Sponsors</a></li>
+                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#">Careers</a></li>
                             </ul>
                         </div>
 

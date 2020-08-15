@@ -61,7 +61,7 @@ export default function FooterContent(){
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">The Organisation</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Our Motto</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Sponsors</a></li>
-                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#77">Careers</a></li>
+                                <li className="footer-list-item"><a style={{ color: '#fff' }} href="#">Careers</a></li>
                             </ul>
                         </div>
 

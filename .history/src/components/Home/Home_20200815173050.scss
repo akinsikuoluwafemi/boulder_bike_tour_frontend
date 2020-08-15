@@ -323,24 +323,9 @@ background-color: #666666;
 
 
 
-// @media(max-width: 320px){
-//     .header-hero {
-//         justify-content: center;
-//         align-items: center;
-        
-//     }
-// }
-
-@media(max-width: 425px){
-     .header-hero {
-        justify-content: center;
-        align-items: center;
+@media(max-width: 321px){
+    .heading-text {
+        padding-right: 3rem;
         
     }
-
-    .bg-purple {
-        background: transparent!important;
-    }
-
-
 }

@@ -15,6 +15,7 @@ const ImageList = () =>
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
+    const [lastPicture, setLastPicture] = useState(null)
 
 
 
@@ -47,10 +48,13 @@ const ImageList = () =>
                 setPictures([...pictures, ...pics])
                 setLoading(false)
                 setTotalPages(pages)
-                
+                setLastPicture(pics[pics.length - 1])
                 // setPerPage(perPage + 5)
-                setPage(prevPage => prevPage + 1)
-                
+                setPage(page + 1)
+                console.log(page)
+                console.log(perPage)
+                console.log(lastPicture)
+                console.log(pictures)
             }).catch(err =>
             {
                 console.log(err)
@@ -67,27 +71,27 @@ const ImageList = () =>
         <div className="py-4">
             <HeaderTime />
 
-            <nav className="navbar navbar-expand-sm sticky-top navbar-light bg-light">
-                <div className="container">
-                    <Link to="/" className="navbar-brand">Boulder Bike Tour</Link>
-                    <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
-                        <span className="navbar-toggler-icon"></span>
+            <nav classN="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+                <div classN="container">
+                    <Link to="/" classN="navbar-brand">Boulder Bike Tour</Link>
+                    <button classN="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+                        <span classN="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbar1">
-                        <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <Link to="/photos" className="nav-link" >Photos</Link>
+                    <div classN="collapse navbar-collapse" id="navbar1">
+                        <ul classN="navbar-nav">
+                            <li classN="nav-item active">
+                                <Link to="/photos" classN="nav-link" >Photos</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/contest" className="nav-link" >Contest</Link>
+                            <li classN="nav-item">
+                                <Link to="/contest" classN="nav-link" >Contest</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/riders" className="nav-link" >Riders</Link>
+                            <li classN="nav-item">
+                                <Link to="/riders" classN="nav-link" >Riders</Link>
                             </li>
                         </ul>
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link to="/location" className="nav-link" href="#">Location</Link>
+                        <ul classN="navbar-nav ml-auto">
+                            <li classN="nav-item">
+                                <Link to="/location" classN="nav-link" href="#">Location</Link>
                             </li>
                         </ul>
                     </div>

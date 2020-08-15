@@ -57,7 +57,7 @@ const Home = () =>{
                     <div className=" card-width shadow bg-purple text-white px-3 py-2 ">
                         <h4 className="">Connect with the world best bikers at the Boulder Bike Tour</h4>
 
-                        <p className="text-white hero-intro-text">You're all invited to Our upcoming Bike tour which happens once every decade. Taking place at colorado at the foot of the Rocky Mountains where we host Bikers from all over the globe. Starts on 24th Oct</p>
+                        <p className="text-white hero-intro-text">You're all invited to Our upcoming Bike tour which happens once every decade. Taking place at colorado at the foot of the Rocky Mountains where we host Bikers from all over the globe. Starts on 24th Ju</p>
 
                         <div className="btn-hero">
                             <span className="btn-text ">Learn More</span>

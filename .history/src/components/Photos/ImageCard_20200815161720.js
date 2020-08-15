@@ -16,13 +16,13 @@ import React, { useRef, useEffect, useState } from 'react';
         if(imageRef.current === null) {
             return
         }else {
-            const height = imageRef.current.clientHeight 
-
-            const spans = Math.ceil(height / 10)
-
-            setSpans(spans)
+            
         }
-        
+        const height = imageRef.current.clientHeight 
+
+        const spans = Math.ceil(height / 10)
+
+        setSpans(spans)
 
     }
 

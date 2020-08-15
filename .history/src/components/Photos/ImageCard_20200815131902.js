@@ -6,6 +6,7 @@ import React, { useRef, useEffect, useState } from 'react';
      const [spans, setSpans] = useState(0)
      
      const imageRef = useRef();
+    //  console.log(imageRef)
 
      useEffect(() => {
          imageRef.current.addEventListener('load', setTheSpans)
@@ -13,16 +14,11 @@ import React, { useRef, useEffect, useState } from 'react';
 
 
     const setTheSpans = () => {
-        if(imageRef.current === null) {
-            return
-        }else {
-            const height = imageRef.current.clientHeight 
+        const height = imageRef.current.clientHeight
 
-            const spans = Math.ceil(height / 10)
+        const spans = Math.ceil(height / 10)
 
-            setSpans(spans)
-        }
-        
+        setSpans(spans)
 
     }
 
@@ -31,7 +27,7 @@ import React, { useRef, useEffect, useState } from 'react';
          <div className="image-container" style={{ gridRowEnd: `span ${spans}` }}>
              <img ref={imageRef} alt={src} src={src} /> 
 
-             <div className="tags badge badge-success">
+             <div class="tags badge badge-success">
                  <span>#BoulderBikeTour</span> &nbsp;
                  <span>#bikerace</span>
              </div>
