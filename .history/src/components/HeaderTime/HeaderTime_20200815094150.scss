@@ -1,0 +1,76 @@
+.timer-container {
+    background: rebeccapurple;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.timer-content {
+    text-align: center;
+    display: flex;
+}
+.timer-content > *:not(last-child) {
+    margin-right: .2rem;
+}
+
+.timer-box {
+    height: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    grid-template-rows: 3fr 1fr;
+    grid-gap: .2rem;
+    
+}
+
+.timer-num {
+    font-size: 2.5rem;
+    grid-row: 1/2;
+    background: #52A7DD2;
+}
+.starts {
+    font-size: 2rem;
+    font-style: italic;
+}
+.days {
+    grid-row: 2/-1;
+    font-weight: bold;
+    background: #52A7DD;
+}
+
+.mobile-countdown {
+    background: #52A7DD;
+    padding: .3rem 1rem;
+}
+
+
+@media(max-width: 575px){
+    .timer-content {
+        display: none;
+    }
+    .timer-container {
+        height: 16rem;
+        // margin-bottom: 2rem;
+    }
+}
+
+
+
+
+.time-small-container {
+    text-align: center;
+    display: none;
+
+}
+
+@media(max-width: 575px){
+    .time-small-container {
+        display: block;
+    }
+}
+
+.time-small-container > * {
+    margin-bottom: .1rem;
+}
