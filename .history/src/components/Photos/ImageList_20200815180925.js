@@ -36,7 +36,7 @@ const ImageList = () =>
                     )
 
                 })
-                setPictures( [...pictures, ...pics])
+                setPictures(p => [...pictures, ...pics])
                 setLoading(false)
                 setTotalPages(pages)
                 
@@ -53,7 +53,7 @@ const ImageList = () =>
        
         loadPictures()
 
-    }, [page,perPage,pictures,query])
+    }, [])
 
 
     const loadPictures = () =>{

@@ -53,7 +53,7 @@ const ImageList = () =>
        
         loadPictures()
 
-    }, [page,perPage,pictures,query])
+    }, [])
 
 
     const loadPictures = () =>{
