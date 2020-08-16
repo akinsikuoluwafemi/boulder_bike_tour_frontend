@@ -17,10 +17,8 @@ const ImageList = () =>{
 
 
     useEffect(() =>{
-          
         loadPictures()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [loadPictures])
 
     const loadPictures = () =>{
 
@@ -51,7 +49,6 @@ const ImageList = () =>{
             })
 
     }
-    
 
     return (
         <div className="py-4">

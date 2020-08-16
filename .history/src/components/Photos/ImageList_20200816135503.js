@@ -17,12 +17,9 @@ const ImageList = () =>{
 
 
     useEffect(() =>{
-          
-        loadPictures()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
-
-    const loadPictures = () =>{
+        
+        const loadPictures = () =>
+        {
 
         const flickrapikey = '162e01778853d65e29516a0b540192d9'
         // const flickrsecret = 'fd337bc310818cbb'
@@ -51,6 +48,10 @@ const ImageList = () =>{
             })
 
     }
+        
+        loadPictures()
+    }, [loadPictures])
+
     
 
     return (

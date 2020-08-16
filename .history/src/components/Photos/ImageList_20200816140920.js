@@ -17,9 +17,11 @@ const ImageList = () =>{
 
 
     useEffect(() =>{
-          
-        loadPictures()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+           loadPictures()
+           
+        }, 1500);
+        
+
     }, [])
 
     const loadPictures = () =>{

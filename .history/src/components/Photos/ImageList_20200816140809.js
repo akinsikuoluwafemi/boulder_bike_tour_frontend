@@ -17,9 +17,13 @@ const ImageList = () =>{
 
 
     useEffect(() =>{
-          
+        setTimeout(() =>
+        {
+            hideSelf();
+        }, 15000);
+        
         loadPictures()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [])
 
     const loadPictures = () =>{

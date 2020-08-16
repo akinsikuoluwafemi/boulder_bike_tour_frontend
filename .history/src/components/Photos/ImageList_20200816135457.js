@@ -17,40 +17,43 @@ const ImageList = () =>{
 
 
     useEffect(() =>{
-          
-        loadPictures()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+        const loadPictures = () =>
+        {
 
-    const loadPictures = () =>{
+            const flickrapikey = '162e01778853d65e29516a0b540192d9'
+            // const flickrsecret = 'fd337bc310818cbb'
+            fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrapikey}&tags=${query}&per_page=${perPage}&page=${page}&format=json&nojsoncallback=1`)
+                .then(response => response.json())
+                .then((data) =>
+                {
+                    let { pages, photo } = data.photos
+                    let pics = photo.map((pic, index) =>
+                    {
+                        let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
+                        return (
+                            <ImageCard key={srcPath} alt="" src={srcPath} />
 
-        const flickrapikey = '162e01778853d65e29516a0b540192d9'
-        // const flickrsecret = 'fd337bc310818cbb'
-        fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrapikey}&tags=${query}&per_page=${perPage}&page=${page}&format=json&nojsoncallback=1`)
-            .then(response => response.json())
-            .then((data) =>{
-                let { pages, photo } = data.photos
-                let pics = photo.map((pic, index) =>{
-                    let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
-                    return (
-                        <ImageCard key={srcPath} alt="" src={srcPath} />
+                        )
 
-                    )
+                    })
+                    setPictures([...pictures, ...pics])
+                    setLoading(false)
+                    setTotalPages(pages)
 
+                    // setPerPage(perPage + 5)
+                    setPage(prevPage => prevPage + 1)
+
+                }).catch(err =>
+                {
+                    console.log(err)
+                    setLoading(true)
                 })
-                setPictures([...pictures, ...pics])
-                setLoading(false)
-                setTotalPages(pages)
-                
-                // setPerPage(perPage + 5)
-                setPage(prevPage => prevPage + 1)
-                
-            }).catch(err =>{
-                console.log(err)
-                setLoading(true)
-            })
 
-    }
+        }
+        
+        loadPictures()
+    }, [loadPictures])
+
     
 
     return (
