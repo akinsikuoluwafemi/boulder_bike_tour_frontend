@@ -11,7 +11,7 @@ export default function FooterContent(){
                     <div className="footer-container">
 
                         <div className="footer-content">
-                            <h6 style={{color: '#bbb'}} className="footer-heading-text py-3">Boulder Bike Tour</h6>
+                            <h6 style={{color: ''}} className="footer-heading-text py-3">Boulder Bike Tour</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item  pb-2"><a style={{ color: '#fff' }} href="#htt">All Boulder Bike tours</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#htt">Summer races</a></li>
@@ -22,7 +22,7 @@ export default function FooterContent(){
                         </div>
 
                         <div className="footer-content">
-                            <h6 style={{ color: '#bbb' }} className="footer-heading-text py-3">Media</h6>
+                            <h6 className="footer-heading-text py-3">Media</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Media Resources</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Latest News</a></li>
@@ -35,7 +35,7 @@ export default function FooterContent(){
                         </div>
 
                         <div className="footer-content">
-                            <h6 style={{ color: '#bbb' }} className="footer-heading-text py-3">Behind the games</h6>
+                            <h6 className="footer-heading-text py-3">Behind the games</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Mascots</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">acient games</a></li>
@@ -44,7 +44,7 @@ export default function FooterContent(){
                         </div>
 
                         <div className="footer-content">
-                            <h6 style={{ color: '#bbb' }} className="footer-heading-text py-3">PROGRAMMES</h6>
+                            <h6 className="footer-heading-text py-3">PROGRAMMES</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">Boulder Bike Clubs</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">women in sports</a></li>
@@ -55,7 +55,7 @@ export default function FooterContent(){
                         </div>
 
                         <div className="footer-content">
-                            <h6 style={{ color: '#bbb' }} className="footer-heading-text py-3">Management Team</h6>
+                            <h6 className="footer-heading-text py-3">Management Team</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">All Boulder Bike tours</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">The Organisation</a></li>

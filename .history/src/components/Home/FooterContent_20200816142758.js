@@ -55,7 +55,7 @@ export default function FooterContent(){
                         </div>
 
                         <div className="footer-content">
-                            <h6 style={{ color: '#bbb' }} className="footer-heading-text py-3">Management Team</h6>
+                            <h6 className="footer-heading-text py-3">Management Team</h6>
                             <ul className="footer-list">
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">All Boulder Bike tours</a></li>
                                 <li className="footer-list-item pb-2"><a style={{ color: '#fff' }} href="#77">The Organisation</a></li>
