@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.wrapper{
+
+    
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media(max-width: )
+
+
+.wrapper .title h1{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px #000;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  justify-content: space-around;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  outline: none;
+  font-weight: bold;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+
+.helper-container {
+  position: relative;
+}
+
+.helper-text-one {
+  position: absolute;
+  top: 3%;
+  left: 3.5%;
+}
+
+.helper-text-two {
+  position: absolute;
+  top: 36% ;
+  left: 3.5%;
+}
+
+.helper-text-three {
+  position: absolute;
+  top: 67%;
+  left: 3.5%;
+}
+
+.helper-container-msg {
+  position: relative;
+}
+
+.helper-text-four {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
