@@ -12,15 +12,16 @@ import FooterContent from './Home/FooterContent';
 
 export default function Navigation() {
     return (
-      <Router>
+        <Router>
+
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contest" component={Contest} />
                 <Route exact path="/riders" component={Riders} />
                 <Route exact path="/location" component={Location} />
                 <Route exact path="/photos" component={ImageList} />
+                <FooterContent/>
             </Switch>
-        <FooterContent/>
-      </Router>
-    );
+        </Router>
+    )
 }

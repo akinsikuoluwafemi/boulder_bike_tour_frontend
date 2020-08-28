@@ -5,14 +5,15 @@ import Contest from './Contest/Contest';
 import Location from './Location/Location';
 import ImageList from './Photos/ImageList';
 import Riders from './Riders/Riders';
-import FooterContent from './Home/FooterContent';
+import FooterContent from './'
 
 
 
 
 export default function Navigation() {
     return (
-      <Router>
+        <Router>
+
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contest" component={Contest} />
@@ -20,7 +21,6 @@ export default function Navigation() {
                 <Route exact path="/location" component={Location} />
                 <Route exact path="/photos" component={ImageList} />
             </Switch>
-        <FooterContent/>
-      </Router>
-    );
+        </Router>
+    )
 }

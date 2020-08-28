@@ -13,14 +13,14 @@ import FooterContent from './Home/FooterContent';
 export default function Navigation() {
     return (
       <Router>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/contest" component={Contest} />
-                <Route exact path="/riders" component={Riders} />
-                <Route exact path="/location" component={Location} />
-                <Route exact path="/photos" component={ImageList} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contest" component={Contest} />
+          <Route exact path="/riders" component={Riders} />
+          <Route exact path="/location" component={Location} />
+          <Route exact path="/photos" component={ImageList} />
             </Switch>
-        <FooterContent/>
+            <FooterContent?>
       </Router>
     );
 }
