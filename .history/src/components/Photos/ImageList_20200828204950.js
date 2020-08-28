@@ -3,6 +3,7 @@ import './Photos.scss'
 import HeaderTime from '../HeaderTime/HeaderTime'
 import { Link } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
+import ImageCard from './ImageCard'
 
 
 const ImageList = () =>{
@@ -30,7 +31,14 @@ const ImageList = () =>{
             .then((data) =>{
                 let { pages, photo } = data.photos
 
-             
+                // let pics = photo.map((pic, index) =>{
+                //     let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
+                //     return (
+                //         <ImageCard key={srcPath} alt="" src={srcPath} />
+
+                //     )
+
+                // })
 
                 let pics = photo.map((pic) => {
                   var srcPath =

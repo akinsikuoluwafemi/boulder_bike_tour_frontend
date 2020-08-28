@@ -3,6 +3,7 @@ import './Photos.scss'
 import HeaderTime from '../HeaderTime/HeaderTime'
 import { Link } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
+import ImageCard from './ImageCard'
 
 
 const ImageList = () =>{
