@@ -75,8 +75,6 @@ export default function Form(){
    const displaySloganErr = (arr) => {
      if (slogan.length === 0) {
        return arr[0];
-     }else if(slogan.length > 50){
-       return arr[0]
      }
    };
 
@@ -140,7 +138,7 @@ export default function Form(){
   // displayFirstNameErr(firstNameErr);
   // console.log(lastNameErr);
   // console.log(emailErr);
-  console.log(sloganErr);
+  // console.log(sloganErr);
 
     return (
       <form class="wrapper" onSubmit={handleSubmit}>

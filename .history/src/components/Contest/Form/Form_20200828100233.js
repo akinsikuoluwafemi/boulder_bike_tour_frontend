@@ -76,7 +76,7 @@ export default function Form(){
      if (slogan.length === 0) {
        return arr[0];
      }else if(slogan.length > 50){
-       return arr[0]
+       return arr[1]
      }
    };
 

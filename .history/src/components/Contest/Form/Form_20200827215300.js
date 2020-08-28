@@ -75,8 +75,6 @@ export default function Form(){
    const displaySloganErr = (arr) => {
      if (slogan.length === 0) {
        return arr[0];
-     }else if(slogan.length > 50){
-       return arr[0]
      }
    };
 
@@ -102,7 +100,7 @@ export default function Form(){
       // https://fastrace-biking.herokuapp.com/api/v1/phrases
         // http://localhost:3001/api/v1/phrases
         axios
-          .post("http://localhost:3001/api/v1/phrases", {
+          .post("https://fastrace-biking.herokuapp.com/api/v1/phrases", {
             first_name,
             last_name,
             email,
@@ -140,7 +138,7 @@ export default function Form(){
   // displayFirstNameErr(firstNameErr);
   // console.log(lastNameErr);
   // console.log(emailErr);
-  console.log(sloganErr);
+  // console.log(sloganErr);
 
     return (
       <form class="wrapper" onSubmit={handleSubmit}>
