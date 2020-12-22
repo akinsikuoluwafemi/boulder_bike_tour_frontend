@@ -15,7 +15,7 @@ const Riders = () =>{
     const renderedRider = riders.map((rider) => (
       <div key={rider.id} id="main-card">
         <div class="cover-photo"></div>
-        <div class=" photo">
+        <div style={{borderRadius: '20px'}}  class="bg-info photo">
           {/* <img src={Faker.image.people()} alt="Faker-pix" /> */}
         </div>
         <div class="content">

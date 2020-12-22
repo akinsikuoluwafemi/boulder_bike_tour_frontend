@@ -12,22 +12,20 @@ const Riders = () =>{
     const { riders, loading } = useContext(RiderContext)
     console.log(riders)
 
-    const renderedRider = riders.map((rider) => (
-      <div key={rider.id} id="main-card">
-        <div class="cover-photo"></div>
-        <div class=" photo">
-          {/* <img src={Faker.image.people()} alt="Faker-pix" /> */}
+    const renderedRider = riders.map(rider => (
+        <div key={rider.id} id="main-card">
+            <div class="cover-photo"></div>
+            <div class="photo">
+                <img src={Faker.image.people()} alt="Faker-pix" />
+            </div>
+            <div class="content">
+                <p class="name h4">{rider.first_name} {rider.last_name}</p>
+                <p class="fullstack h6">From: <span className="badge badge-info">{rider.city}</span> </p>
+
+            </div>
+
         </div>
-        <div class="content">
-          <p class="name h4">
-            {rider.first_name} {rider.last_name}
-          </p>
-          <p class="fullstack h6">
-            From: <span className="badge badge-info">{rider.city}</span>{" "}
-          </p>
-        </div>
-      </div>
-    ));
+    ))
 
     return (
 

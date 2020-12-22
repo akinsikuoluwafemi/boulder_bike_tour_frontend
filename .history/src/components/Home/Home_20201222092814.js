@@ -104,7 +104,7 @@ const Home = () =>{
                             </div>
                             <figcaption className="figure-caption">
                                 <p className="h6 caption-text font-weight-bold ">The Boulder Bike 2020 mascot will be ...</p>
-                                <p className="date">14 AUG 2021</p>
+                                <p className="date">14 AUG 2020</p>
                             </figcaption>
                         </figure>
 
@@ -115,7 +115,7 @@ const Home = () =>{
                             </div>
                             <figcaption className="figure-caption">
                                 <p className="h6 caption-text font-weight-bold ">Boulder Bike 2020 participant at the olympic games ...</p>
-                                <p className="date">16 AUG 2021</p>
+                                <p className="date">16 AUG 2020</p>
                             </figcaption>
                         </figure>
 
@@ -126,7 +126,7 @@ const Home = () =>{
                             </div>
                             <figcaption className="figure-caption">
                                 <p className="h6 caption-text font-weight-bold ">We want to have a dedicated race for women in Boulder...</p>
-                                <p className="date">18 AUG 2021</p>
+                                <p className="date">18 AUG 2020</p>
                             </figcaption>
                         </figure>
 
@@ -137,7 +137,7 @@ const Home = () =>{
                             </div>
                             <figcaption className="figure-caption">
                                 <p className="h6 caption-text font-weight-bold ">Our representation at the annual sports for justice event in DC ...</p>
-                                <p className="date">19 AUG 2021</p>
+                                <p className="date">19 AUG 2020</p>
                             </figcaption>
                         </figure>
 

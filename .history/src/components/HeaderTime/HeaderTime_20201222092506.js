@@ -6,7 +6,7 @@ import CountDown from './CountDown'
 
 function HeaderTime () {
     return (
-        <CountDown futureDate="2021-08-22T09:33:32.212Z" />
+        <CountDown futureDate="2021-0-22T09:33:32.212Z" />
     )
 }
 
